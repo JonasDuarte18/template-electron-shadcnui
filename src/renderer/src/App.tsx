@@ -12,7 +12,7 @@ export function App() {
         <h1 className="text-center  text-xl">
           Template electron with shadcnui
         </h1>
-        <div className="flex bg-gradient-to-tr bg-slate-400 gap-2">
+        <div className="flex  gap-2">
           <Button>Button</Button>
           <ModeToggle />
         </div>
