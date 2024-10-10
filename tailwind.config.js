@@ -1,5 +1,6 @@
 // tailwind.config.js
 const { fontFamily } = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   darkMode: ["class"],
@@ -76,5 +77,17 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        ".region-drag": {
+          "-webkit-app-region": "drag",
+        },
+        ".region-no-drag": {
+          "-webkit-app-region": "no-drag",
+        },
+      });
+    }),
+  ],
 };

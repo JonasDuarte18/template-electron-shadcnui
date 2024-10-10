@@ -21,6 +21,11 @@
       "@/*": ["./src/renderer/src/*"]
     }
   },
-  "include": ["src", "src/preload/index.d.ts", "electron.vite.config.*"],
+  "include": [
+    "src",
+    "src/preload/index.d.ts",
+    "electron.vite.config.*",
+    "src/preload/index.d.ts"
+  ],
   "exclude": ["node_modules"]
 }
